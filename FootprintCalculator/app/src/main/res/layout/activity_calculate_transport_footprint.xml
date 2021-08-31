@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_home">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relative2">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Transport Consumptions"
+            android:id="@+id/tv1"
+            android:layout_centerHorizontal="true"
+            android:textSize="24sp"
+            android:textStyle="bold|italic"
+            android:textColor="@color/charcoal"
+            android:fontFamily="@font/abeezee"
+            android:layout_marginTop="30dp"
+            />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/registerName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/tv1"
+            android:textColorHint="@color/purple_200"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:boxStrokeColor="@color/purple_200"
+            app:boxStrokeWidth="3dp"
+            app:boxStrokeWidthFocused="4dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtVehicleValue"
+                android:drawableRight="@drawable/fiat_500"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="Vehicle(Travelled km per month)"
+                android:inputType="number"
+                android:paddingLeft="3dp"
+                android:textColor="#000" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_height="55dp"
+            android:paddingTop="15dp"
+            android:textAlignment="textStart"
+            android:paddingLeft="8dp"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/registerName"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Distance travelled by Bus "
+            android:layout_centerInParent="true"
+            android:textSize="20sp"
+            android:layout_marginTop="25dp"
+            android:textStyle="bold"
+            android:textColor="@color/charcoal"
+            android:id="@+id/tvBus"
+            android:background="@drawable/border">
+
+        </TextView>
+
+
+        <ImageView
+            android:layout_marginRight="33dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/ic_bus"
+            android:layout_below="@+id/registerName"
+            android:layout_alignParentRight="true"
+
+            android:id="@+id/imgBus"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/transparent"
+            android:id="@+id/view1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/tvBus"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:layout_height="55dp"
+            android:paddingTop="15dp"
+            android:textAlignment="textStart"
+            android:paddingLeft="8dp"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/view1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Distance travelled by Train "
+            android:textSize="20sp"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/charcoal"
+            android:id="@+id/tvTrainn"
+            android:background="@drawable/border"/>
+
+        <ImageView
+            android:layout_marginRight="33dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_train"
+            android:layout_below="@+id/view1"
+            android:layout_marginTop="18dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/imgTrain"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/transparent"
+            android:id="@+id/view2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/tvTrainn"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:background="@drawable/border"
+            android:layout_height="55dp"
+            android:paddingTop="15dp"
+            android:textAlignment="textStart"
+            android:paddingLeft="8dp"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/view2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Distance travelled by Plane "
+            android:textSize="20sp"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/charcoal"
+            android:id="@+id/tvPlane"/>
+
+        <ImageView
+            android:layout_marginRight="33dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_plane"
+            android:layout_below="@+id/view2"
+            android:layout_marginTop="19dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/imgPlane"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/transparent"
+            android:id="@+id/view3"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/tvPlane"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:background="@drawable/border"
+            android:layout_height="55dp"
+            android:paddingTop="15dp"
+            android:textAlignment="textStart"
+            android:paddingLeft="8dp"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/view3"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Distance travelled by Metro "
+            android:textSize="20sp"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/charcoal"
+            android:id="@+id/tvMetro"/>
+
+        <ImageView
+            android:layout_marginRight="33dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_subway"
+            android:layout_below="@+id/view3"
+            android:layout_marginTop="16dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/imgMetro"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/transparent"
+            android:id="@+id/view4"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/tvMetro"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:background="@drawable/border"
+            android:layout_height="55dp"
+            android:paddingTop="15dp"
+            android:textAlignment="textStart"
+            android:paddingLeft="8dp"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/view4"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Distance travelled by Taxi "
+            android:textSize="20sp"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/charcoal"
+            android:id="@+id/tvTaxi"/>
+
+        <ImageView
+            android:layout_marginRight="33dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_taxi"
+            android:layout_below="@+id/view4"
+            android:layout_marginTop="18dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/imgTaxi"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/transparent"
+            android:id="@+id/view5"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/tvTaxi"
+            android:layout_marginTop="15dp"/>
+
+        <android.widget.Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/tvTaxi"
+            android:layout_marginTop="35dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/background_design"
+            android:text="View Emission Values"
+            android:textColor="#fff"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/btnViewValues"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+        <android.widget.Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/btnViewValues"
+            android:layout_marginTop="25dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/background_design"
+            android:text="Calculate Footprint"
+            android:textColor="#fff"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/btnCalculate"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="15dp"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_nav_home"
+            android:layout_below="@id/btnCalculate"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="36dp"
+            android:scaleType="center"
+            android:background="@drawable/login_butn_green"
+            app:borderWidth="4dp"
+            app:fabCustomSize="100dp"
+            app:maxImageSize="80dp"
+            app:rippleColor="@color/pink"/>
+
+
+    </RelativeLayout>
+
+</ScrollView>

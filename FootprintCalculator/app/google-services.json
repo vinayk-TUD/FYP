@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1055809428480",
+    "firebase_url": "https://footprint-calculator-default-rtdb.firebaseio.com",
+    "project_id": "footprint-calculator",
+    "storage_bucket": "footprint-calculator.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1055809428480:android:4830990c6cbae73c980ce5",
+        "android_client_info": {
+          "package_name": "com.app.footprintcalculator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1055809428480-7g7ukso26cj5r15t80luvqvskk47n2qk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARMuPTKoxXpmJsQ4jrdgFGbWyv6Wf2Uf0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1055809428480-7g7ukso26cj5r15t80luvqvskk47n2qk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

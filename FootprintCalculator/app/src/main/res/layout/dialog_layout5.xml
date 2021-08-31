@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="12dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_cool_asteroid">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv"
+            android:layout_marginLeft="5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:textSize="24sp"
+            android:textColor="#ff0d94"
+            android:text="Calculated Emissions Values" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvVehicleScore"
+            android:layout_below="@+id/tv"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:text="" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvElectricityScore"
+            android:layout_below="@+id/tvVehicleScore"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:text="" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvGasScore"
+            android:layout_below="@+id/tvElectricityScore"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:text="" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvOilScore"
+            android:layout_below="@+id/tvGasScore"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:text="" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvWasteScore"
+            android:layout_below="@+id/tvOilScore"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:text="" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvWaterScore"
+            android:layout_below="@+id/tvWasteScore"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:text="" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvWaterScore"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp"
+            android:text="View comparison on graph."
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:id="@+id/tvSave"/>
+
+        <android.widget.Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:id="@+id/btnSub"
+            android:layout_below="@+id/tvSave"
+            android:layout_marginTop="15sp"
+            android:background="@drawable/background_design"
+            android:text="View Graph"
+            android:textColor="#fff"
+            android:layout_centerHorizontal="true"
+            android:ems="8"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="10sp"
+            android:layout_below="@+id/btnSub" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

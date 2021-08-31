@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scroll">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_results">
+
+            <TextView
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:background="@drawable/border"
+                android:layout_width="match_parent"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content"
+                android:text="Home Emission Values"
+                android:id="@+id/tv1"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textColor="#000"
+                android:layout_marginTop="20dp"
+                />
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvElectricityScore"
+                android:layout_below="@+id/tv1"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/teal_700"
+                android:text="" />
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvGasScore"
+                android:layout_below="@+id/tvElectricityScore"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/teal_700"
+                android:text="" />
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvOilScore"
+                android:layout_below="@+id/tvGasScore"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/teal_700"
+                android:text="" />
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvWasteScore"
+                android:layout_below="@+id/tvOilScore"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/teal_700"
+                android:text="" />
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvWaterScore"
+                android:layout_below="@+id/tvWasteScore"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/teal_700"
+                android:text="" />
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvTotalScore"
+                android:layout_below="@+id/tvWaterScore"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="italic|bold"
+                android:textSize="20sp"
+                android:textColor="@color/purple_500"
+                android:text=""
+                android:textAppearance="@font/abeezee"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/tvTotalScore"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="12dp"
+                android:background="#ff0d94"
+                android:id="@+id/v1" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/v1"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:background="#ff0d94"
+                android:id="@+id/vv1" />
+
+            <TextView
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:background="@drawable/border"
+                android:fontFamily="@font/abeezee"
+                android:layout_width="match_parent"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content"
+                android:text="Transport Emission Values"
+                android:id="@+id/tv2"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:layout_below="@+id/v1"
+                android:textColor="#000"
+                android:layout_marginTop="20dp"
+                />
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvVehicleScore"
+                android:layout_below="@+id/tv2"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/teal_700"
+                android:text="" />
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvBusScore"
+                android:layout_below="@+id/tvVehicleScore"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/teal_700"
+                android:text="" />
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvTrainScore"
+                android:layout_below="@+id/tvBusScore"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/teal_700"
+                android:text="" />
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvPlaneScore"
+                android:layout_below="@+id/tvTrainScore"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/teal_700"
+                android:text="" />
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvMetroScore"
+                android:layout_below="@+id/tvPlaneScore"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/teal_700"
+                android:text="" />
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvTaxiScore"
+                android:layout_below="@+id/tvMetroScore"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/teal_700"
+                android:text="" />
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvTotalTransportScore"
+                android:layout_below="@+id/tvTaxiScore"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold|italic"
+                android:textSize="20sp"
+                android:textColor="@color/purple_500"
+                android:text=""
+                android:textAppearance="@font/abeezee"/>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/tvTotalTransportScore"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="12dp"
+                android:background="#ff0d94"
+                android:id="@+id/v2"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/v2"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="5dp"
+                android:background="#ff0d94"
+                android:id="@+id/vv2" />
+
+            <TextView
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:background="@drawable/border"
+                android:layout_width="match_parent"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content"
+                android:text="Food Emission Values"
+                android:id="@+id/tv3"
+                android:layout_centerHorizontal="true"
+                android:textSize="24sp"
+                android:textAlignment="center"
+                android:layout_below="@+id/tvTotalTransportScore"
+                android:textColor="#000"
+                android:layout_marginTop="30dp"
+                />
+
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/abeezee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvRedMeatScore"
+                android:layout_below="@+id/tv3"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/teal_700"
+                android:text="" />
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvWhiteMeatScore"
+                android:layout_below="@+id/tvRedMeatScore"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/teal_700"
+                android:text="" />
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvDairyScore"
+                android:layout_below="@+id/tvWhiteMeatScore"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/teal_700"
+                android:text="" />
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvCerealsScore"
+                android:layout_below="@+id/tvDairyScore"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/teal_700"
+                android:text="" />
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvVegetablesScore"
+                android:layout_below="@+id/tvCerealsScore"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/teal_700"
+                android:text="" />
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvFruitsScore"
+                android:layout_below="@+id/tvVegetablesScore"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/teal_700"
+                android:text="" />
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvOilsScore"
+                android:layout_below="@+id/tvFruitsScore"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/teal_700"
+                android:text="" />
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvSnacksScore"
+                android:layout_below="@+id/tvOilsScore"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/teal_700"
+                android:text="" />
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvDrinksScore"
+                android:layout_below="@+id/tvSnacksScore"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/teal_700"
+                android:text="" />
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvTotalFoodScore"
+                android:layout_below="@+id/tvDrinksScore"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold|italic"
+                android:textSize="20sp"
+                android:textColor="@color/purple_500"
+                android:text=""
+                android:textAppearance="@font/abeezee" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/tvTotalFoodScore"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="#ff0d94"
+                android:layout_marginTop="10dp"
+                android:id="@+id/v3"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/v3"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="5dp"
+                android:background="#ff0d94"
+                android:id="@+id/vv3" />
+
+            <android.widget.Button
+                android:id="@+id/btnCompare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/v3"
+
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/bg_cool_asteroid"
+                android:text="compare yourself to other countries"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnCompare"/>
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <android.widget.Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:layout_margin="10dp"
+        android:id="@+id/btnUpdateHome"
+        android:layout_below="@+id/scroll"
+        android:text="Add Home Values"
+        android:textSize="18sp"
+        android:visibility="gone"
+        android:textColor="#fff"
+        android:textStyle="bold"/>
+
+    <android.widget.Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:layout_margin="10dp"
+        android:id="@+id/btnUpdateTransport"
+        android:text="Add Transport Values"
+        android:layout_below="@+id/btnUpdateHome"
+        android:textSize="18sp"
+        android:visibility="gone"
+        android:textColor="#fff"
+        android:textStyle="bold"/>
+
+    <android.widget.Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:layout_margin="10dp"
+        android:id="@+id/btnUpdateFood"
+        android:layout_below="@+id/btnUpdateTransport"
+        android:text="Add Food Values"
+        android:textSize="18sp"
+        android:visibility="gone"
+        android:textColor="#fff"
+        android:textStyle="bold"/>
+
+</RelativeLayout>

@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.UserActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@drawable/bg_green"
+            android:padding="20dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="70dp"
+                android:id="@+id/news_card"
+                android:layout_height="70dp"
+                android:layout_alignParentRight="true"
+                android:background="@color/transparent"
+                android:backgroundTint="@color/transparent"
+                app:strokeWidth="2dp"
+                app:strokeColor="@color/colorPrimary">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/global_mobile_news"
+                    />
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/profile_image"
+                android:layout_width="119dp"
+                android:layout_height="108dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/nature_icon_white"
+                app:civ_border="true"
+                app:civ_border_color_end="#122259"
+                app:civ_border_color_start="#9561a1"
+                app:civ_border_width="7dp" />
+
+            <TextView
+                android:id="@+id/full_name"
+                android:layout_width="wrap_content"
+                android:layout_height="37dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/profile_image"
+                android:fontFamily="monospace"
+                android:includeFontPadding="false"
+                android:text="Vinay Kumar"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/dash_label"
+                android:layout_width="105dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/full_name"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="-14dp"
+                android:layout_toRightOf="@id/profile_image"
+                android:includeFontPadding="false"
+                android:text="My Dashboard"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/scrollText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dash_label"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="38dp"
+                android:layout_marginRight="38dp"
+                android:ellipsize="marquee"
+                android:fontFamily="@font/abeezee"
+                android:gravity="center_horizontal"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:padding="5dp"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text="Final Year Project Business Computing DT354/4 - Vinay Kumar"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-10dp"
+            android:background="@color/white"
+            android:padding="20dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardCalc"
+                android:layout_width="0dp"
+                android:layout_height="125dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="#2c3e50"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="10dp"
+                app:strokeColor="@color/dashborder"
+                app:strokeWidth="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+
+
+                    <ImageView
+                        android:id="@+id/image1"
+                        android:layout_width="87dp"
+                        android:layout_height="63dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginVertical="18dp"
+                        android:src="@drawable/ic_calculator" />
+
+                    <TextView
+                        android:id="@+id/payment_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/image1"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="-10dp"
+                        android:fontFamily="@font/abeezee"
+                        android:includeFontPadding="false"
+                        android:text="Calculate footprint"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold|italic" />
+
+                    <android.widget.Button
+                        android:id="@+id/btnCalculateFootprint"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/transparent"></android.widget.Button>
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardFoot"
+                android:layout_width="0dp"
+                android:layout_height="125dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="#2c3e50"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="10dp"
+                app:strokeColor="@color/dashborder"
+                app:strokeWidth="4dp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/image2"
+                        android:layout_width="87dp"
+                        android:layout_height="63dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginVertical="18dp"
+                        android:src="@drawable/carbon_footprint_symbol" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/image2"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="-10dp"
+                        android:fontFamily="@font/abeezee"
+                        android:includeFontPadding="false"
+                        android:text="My Footprints"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold|italic" />
+
+                    <android.widget.Button
+                        android:id="@+id/btnMyFootprint"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/transparent"></android.widget.Button>
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-23dp"
+            android:padding="20dp"
+            android:background="@color/white">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardComp"
+                android:layout_width="0dp"
+                android:layout_height="125dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="#2c3e50"
+                app:cardElevation="10dp"
+                app:strokeColor="@color/dashborder"
+                app:strokeWidth="4dp"
+                app:cardCornerRadius="15dp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/image3"
+                        android:layout_width="87dp"
+                        android:layout_height="63dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginVertical="18dp"
+                        android:src="@drawable/ic_compare_icon" />
+
+                    <TextView
+                        android:id="@+id/payment_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/image3"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/abeezee"
+                        android:includeFontPadding="false"
+                        android:layout_marginTop="-10dp"
+                        android:text="Compare footprints"
+                        android:textSize="14sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold|italic" />
+
+                    <android.widget.Button
+                        android:id="@+id/btnCompareFootprints"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/transparent">
+                    </android.widget.Button>
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardCompG"
+                android:layout_width="0dp"
+                android:layout_height="125dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="#2c3e50"
+                app:cardElevation="10dp"
+                app:strokeColor="@color/dashborder"
+                app:strokeWidth="4dp"
+                app:cardCornerRadius="15dp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/image4"
+                        android:layout_width="87dp"
+                        android:layout_height="63dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginVertical="18dp"
+                        android:src="@drawable/results_graph" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/image4"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/abeezee"
+                        android:includeFontPadding="false"
+                        android:layout_marginTop="-10dp"
+                        android:text="Compare On Graph"
+                        android:textSize="14sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold|italic" />
+
+                    <android.widget.Button
+                        android:id="@+id/btnCompareOnGraph"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/transparent">
+                    </android.widget.Button>
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-23dp"
+            android:padding="20dp"
+            android:background="@color/white">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardJourney"
+                android:layout_width="0dp"
+                android:layout_height="125dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="#2c3e50"
+                app:cardElevation="10dp"
+                app:strokeColor="@color/dashborder"
+                app:strokeWidth="4dp"
+                app:cardCornerRadius="15dp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/image5"
+                        android:layout_width="87dp"
+                        android:layout_height="63dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginVertical="18dp"
+                        android:src="@drawable/ic_map" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/image5"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/abeezee"
+                        android:includeFontPadding="false"
+                        android:layout_marginTop="-10dp"
+                        android:text="Journey Planner"
+                        android:textSize="14sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold|italic" />
+                    <android.widget.Button
+                        android:id="@+id/btnJourneyPlanner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/transparent">
+                    </android.widget.Button>
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardWeather"
+                android:layout_width="0dp"
+                android:layout_height="125dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="#2c3e50"
+                app:cardElevation="10dp"
+                app:strokeColor="@color/dashborder"
+                app:strokeWidth="4dp"
+                app:cardCornerRadius="15dp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/image6"
+                        android:layout_width="87dp"
+                        android:layout_height="63dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginVertical="18dp"
+                        android:src="@drawable/ic_weather" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/image6"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/abeezee"
+                        android:includeFontPadding="false"
+                        android:layout_marginTop="-10dp"
+                        android:text="Weather"
+                        android:textSize="14sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold|italic" />
+
+                    <android.widget.Button
+                        android:id="@+id/btnHomeWeather"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/transparent">
+                    </android.widget.Button>
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-23dp"
+            android:padding="20dp"
+            android:background="@color/white">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardprofile"
+                android:layout_width="0dp"
+                android:layout_height="125dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="#2c3e50"
+                app:cardElevation="10dp"
+                app:strokeColor="@color/dashborder"
+                app:strokeWidth="4dp"
+                app:cardCornerRadius="15dp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/image5"
+                        android:layout_width="87dp"
+                        android:layout_height="63dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginVertical="18dp"
+                        android:src="@drawable/user_profile" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/image5"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/abeezee"
+                        android:includeFontPadding="false"
+                        android:layout_marginTop="-10dp"
+                        android:text="Profile"
+                        android:textSize="14sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold|italic" />
+                    <android.widget.Button
+                        android:id="@+id/btnProfile"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/transparent">
+                    </android.widget.Button>
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardLog"
+                android:layout_width="0dp"
+                android:layout_height="125dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="#2c3e50"
+                app:cardElevation="10dp"
+                app:strokeColor="@color/dashborder"
+                app:strokeWidth="4dp"
+                app:cardCornerRadius="15dp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/image6"
+                        android:layout_width="87dp"
+                        android:layout_height="63dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginVertical="18dp"
+                        android:src="@drawable/ic_sign_out" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/image6"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/abeezee"
+                        android:includeFontPadding="false"
+                        android:layout_marginTop="-10dp"
+                        android:text="Logout"
+                        android:textSize="14sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold|italic" />
+
+                    <android.widget.Button
+                        android:id="@+id/btnLogout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/transparent">
+                    </android.widget.Button>
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Footprint Calculator</string>
+    <string name="title_activity_get_plane_values">Map</string>
+
+    <array name="choice">
+        <item>Select value input choice</item>
+        <item>Estimated average(Single value)</item>
+        <item>Accurate values for each consumption</item>
+    </array>
+
+    <string-array name="time">
+        <item>2-3 pm</item>
+        <item>3-4 pm</item>
+        <item>4-5 pm</item>
+        <item>5-6 pm</item>
+        <item>6-7 pm</item>
+        <item>7-8 pm</item>
+        <item>8-9 pm</item>
+        <item>9-10 pm</item>
+    </string-array>
+
+
+</resources>

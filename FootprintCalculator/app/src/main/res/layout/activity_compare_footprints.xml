@@ -1,0 +1,773 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_green">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#ff0d94"
+                android:layout_marginTop="40dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/charcoal"
+                android:id="@+id/tvFootprint1"
+                android:text="Footprint 1"
+                android:layout_marginLeft="25dp"
+                android:textAlignment="center"
+                android:layout_marginTop="50dp"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="320dp"
+                android:layout_marginTop="40dp"
+                android:background="#ff0d94"
+                android:layout_centerHorizontal="true"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/tvFootprint1"
+                android:id="@+id/view1"
+                android:background="#ff0d94" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/tvFootprint2"
+                android:layout_alignParentRight="true"
+                android:background="#ff0d94" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/charcoal"
+                android:id="@+id/tvFootprint2"
+                android:text="Footprint 2"
+                android:layout_marginRight="25dp"
+                android:textAlignment="center"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="50dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home Emissions"
+                android:id="@+id/tv1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:background="@drawable/border_compare"
+                android:paddingBottom="1dp"
+                android:paddingTop="1dp"
+                android:paddingRight="3dp"
+                android:paddingLeft="3dp"
+                android:layout_below="@+id/view1"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvElectricityScore"
+                android:layout_below="@+id/tv1"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:textSize="15sp"
+                android:textColor="#f5ff0d"
+                android:text="" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvGasScore"
+                android:layout_below="@+id/tvElectricityScore"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:textColor="#f5ff0d"
+                android:text="" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvOilScore"
+                android:layout_below="@+id/tvGasScore"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:textColor="#f5ff0d"
+                android:text="" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvWasteScore"
+                android:layout_below="@+id/tvOilScore"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:textColor="#f5ff0d"
+                android:text="" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvWaterScore"
+                android:layout_below="@+id/tvWasteScore"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:textColor="#f5ff0d"
+                android:text="" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvTotalScore"
+                android:layout_below="@+id/tvWaterScore"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:textColor="#ff650d"
+                android:text="" />
+
+
+            <TextView
+                android:background="@drawable/border_compare"
+                android:paddingBottom="1dp"
+                android:paddingTop="1dp"
+                android:paddingRight="3dp"
+                android:paddingLeft="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home Emissions"
+                android:id="@+id/tv4"
+                android:layout_marginRight="20dp"
+                android:textSize="18sp"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/charcoal"
+                android:layout_below="@+id/view1"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvElectricityScore2"
+                android:layout_below="@+id/tv4"
+                android:layout_marginRight="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:textSize="15sp"
+                android:textColor="#f5ff0d"
+                android:text="" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvGasScore2"
+                android:layout_below="@+id/tvElectricityScore2"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentRight="true"
+                android:textSize="15sp"
+                android:textColor="#f5ff0d"
+                android:text="" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvOilScore2"
+                android:layout_below="@+id/tvGasScore2"
+                android:layout_marginRight="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:textColor="#f5ff0d"
+                android:text="" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvWasteScore2"
+                android:layout_below="@+id/tvOilScore2"
+                android:layout_marginRight="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:textColor="#f5ff0d"
+                android:text="" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvWaterScore2"
+                android:layout_below="@+id/tvWasteScore2"
+                android:layout_marginRight="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:textColor="#f5ff0d"
+                android:text="" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvTotalScore2"
+                android:layout_below="@+id/tvWaterScore2"
+                android:layout_marginRight="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:textColor="#ff650d"
+                android:text="Total" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ff0d94"
+                android:layout_below="@+id/tvTotalScore2"
+                android:layout_marginTop="10dp"
+                android:id="@+id/v1"/>
+
+
+            <TextView
+                android:background="@drawable/border_compare"
+                android:paddingBottom="1dp"
+                android:paddingTop="1dp"
+                android:paddingRight="3dp"
+                android:paddingLeft="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Transport Emissions"
+                android:id="@+id/tv2"
+                android:layout_marginLeft="17dp"
+                android:textSize="18sp"
+                android:layout_below="@+id/v1"
+                android:textColor="@color/charcoal"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvVehicleScore"
+                android:layout_below="@+id/tv2"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:textSize="15sp"
+                android:textColor="#f5ff0d"
+                android:text="" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvBusScore"
+                android:layout_below="@+id/tvVehicleScore"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:textColor="#f5ff0d"
+                android:text="" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvTrainScore"
+                android:layout_below="@+id/tvBusScore"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:textColor="#f5ff0d"
+                android:text="" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvPlaneScore"
+                android:layout_below="@+id/tvTrainScore"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:textColor="#f5ff0d"
+                android:text="" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvMetroScore"
+                android:layout_below="@+id/tvPlaneScore"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:textColor="#f5ff0d"
+                android:text="" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvTaxiScore"
+                android:layout_below="@+id/tvMetroScore"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:textColor="#f5ff0d"
+                android:text="" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvTotalTransportScore"
+                android:layout_below="@+id/tvTaxiScore"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:textColor="#ff650d"
+                android:text="" />
+
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="310dp"
+                android:background="#ff0d94"
+                android:layout_below="@+id/v1"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:background="@drawable/border_compare"
+                android:paddingBottom="1dp"
+                android:paddingTop="1dp"
+                android:paddingRight="3dp"
+                android:paddingLeft="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Transport Emissions"
+                android:id="@+id/tv5"
+                android:layout_marginRight="17dp"
+                android:textSize="18sp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/v1"
+                android:textColor="@color/charcoal"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvVehicleScore2"
+                android:layout_below="@+id/tv5"
+                android:layout_marginRight="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:textSize="15sp"
+                android:textColor="#f5ff0d"
+                android:text="" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvBusScore2"
+                android:layout_below="@+id/tvVehicleScore2"
+                android:layout_marginRight="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:textColor="#f5ff0d"
+                android:text="" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvTrainScore2"
+                android:layout_below="@+id/tvBusScore2"
+                android:layout_marginRight="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:textColor="#f5ff0d"
+                android:text="" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvPlaneScore2"
+                android:layout_below="@+id/tvTrainScore2"
+                android:layout_marginRight="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:textColor="#f5ff0d"
+                android:text="" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvMetroScore2"
+                android:layout_below="@+id/tvPlaneScore2"
+                android:layout_marginRight="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:textColor="#f5ff0d"
+                android:text="" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvTaxiScore2"
+                android:layout_below="@+id/tvMetroScore2"
+                android:layout_marginRight="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:textColor="#f5ff0d"
+                android:text="" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvTotalTransportScore2"
+                android:layout_below="@+id/tvTaxiScore2"
+                android:layout_marginRight="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:textColor="#ff650d"
+                android:text="Total" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ff0d94"
+                android:layout_below="@+id/tvTotalTransportScore2"
+                android:layout_marginTop="10dp"
+                android:id="@+id/v2"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="400dp"
+                android:background="#ff0d94"
+                android:layout_below="@+id/v2"
+                android:layout_centerHorizontal="true"/>
+
+
+            <TextView
+                android:background="@drawable/border_compare"
+                android:paddingBottom="1dp"
+                android:paddingTop="1dp"
+                android:paddingRight="3dp"
+                android:paddingLeft="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Food Emissions"
+                android:id="@+id/tv3"
+                android:layout_marginLeft="20dp"
+                android:textSize="18sp"
+                android:layout_below="@+id/v2"
+                android:textColor="@color/charcoal"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvRedMeatScore"
+                android:layout_below="@+id/tv3"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:textSize="15sp"
+                android:textColor="#f5ff0d"
+                android:text="" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvWhiteMeatScore"
+                android:layout_below="@+id/tvRedMeatScore"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:textColor="#f5ff0d"
+                android:text="" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvDairyScore"
+                android:layout_below="@+id/tvWhiteMeatScore"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:textColor="#f5ff0d"
+                android:text="" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvCerealsScore"
+                android:layout_below="@+id/tvDairyScore"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:textColor="#f5ff0d"
+                android:text="" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvVegetablesScore"
+                android:layout_below="@+id/tvCerealsScore"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:textColor="#f5ff0d"
+                android:text="" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvFruitsScore"
+                android:layout_below="@+id/tvVegetablesScore"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:textColor="#f5ff0d"
+                android:text="" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvOilsScore"
+                android:layout_below="@+id/tvFruitsScore"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:textColor="#f5ff0d"
+                android:text="" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvSnacksScore"
+                android:layout_below="@+id/tvOilsScore"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:textColor="#f5ff0d"
+                android:text="" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvDrinksScore"
+                android:layout_below="@+id/tvSnacksScore"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:textColor="#f5ff0d"
+                android:text="" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvTotalFoodScore"
+                android:layout_below="@+id/tvDrinksScore"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:textColor="#ff650d"
+                android:text="" />
+
+            <TextView
+                android:background="@drawable/border_compare"
+                android:paddingBottom="1dp"
+                android:paddingTop="1dp"
+                android:paddingRight="3dp"
+                android:paddingLeft="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Food Emissions"
+                android:id="@+id/tv6"
+                android:layout_marginRight="20dp"
+                android:layout_alignParentRight="true"
+                android:textSize="18sp"
+                android:layout_below="@+id/v2"
+                android:textColor="@color/charcoal"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvRedMeatScore2"
+                android:layout_below="@+id/tv3"
+                android:layout_marginRight="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:textSize="15sp"
+                android:textColor="#f5ff0d"
+                android:text="" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvWhiteMeatScore2"
+                android:layout_below="@+id/tvRedMeatScore2"
+                android:layout_marginRight="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:textColor="#f5ff0d"
+                android:text="" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvDairyScore2"
+                android:layout_below="@+id/tvWhiteMeatScore2"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentRight="true"
+                android:textSize="15sp"
+                android:textColor="#f5ff0d"
+                android:text="" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvCerealsScore2"
+                android:layout_below="@+id/tvDairyScore2"
+                android:layout_marginRight="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:textColor="#f5ff0d"
+                android:text="" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvVegetablesScore2"
+                android:layout_below="@+id/tvCerealsScore2"
+                android:layout_marginRight="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:textColor="#f5ff0d"
+                android:text="" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvFruitsScore2"
+                android:layout_below="@+id/tvVegetablesScore2"
+                android:layout_marginRight="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:textColor="#f5ff0d"
+                android:text="" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvOilsScore2"
+                android:layout_below="@+id/tvFruitsScore2"
+                android:layout_marginRight="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:textColor="#f5ff0d"
+                android:text="" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvSnacksScore2"
+                android:layout_below="@+id/tvOilsScore2"
+                android:layout_marginRight="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:textColor="#f5ff0d"
+                android:text="" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvDrinksScore2"
+                android:layout_below="@+id/tvSnacksScore2"
+                android:layout_marginRight="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:textColor="#f5ff0d"
+                android:text="" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvTotalFoodScore2"
+                android:layout_below="@+id/tvDrinksScore2"
+                android:layout_marginRight="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:textColor="#ff650d"
+                android:text="" />
+
+            <View
+                android:id="@+id/v3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/tvTotalFoodScore2"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="0dp"
+                android:background="#ff0d94" />
+
+            <TextView
+                android:visibility="gone"
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/v3"
+                android:text="Combined total"
+                android:textColor="#ff650d"
+                android:id="@+id/FP1Total"
+                android:layout_marginLeft="6dp"/>
+
+            <TextView
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/v3"
+                android:text="Combined total"
+                android:textColor="#ff650d"
+                android:id="@+id/FP2Total"/>
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

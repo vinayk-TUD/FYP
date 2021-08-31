@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_home">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relative2">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Home Consumptions"
+            android:id="@+id/tv1"
+            android:layout_centerHorizontal="true"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/abeezee"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All values are for 2 months"
+            android:id="@+id/tv2"
+            android:layout_centerHorizontal="true"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/tv1"
+            android:textColor="#696767"
+            android:layout_marginTop="3dp"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:theme="@style/MyTextInputLayout_overlay"
+            android:id="@+id/registerName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_below="@id/tv2"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:hintTextColor="@color/purple_700"
+            app:hintAnimationEnabled="true"
+            app:hintEnabled="true"
+            app:expandedHintEnabled="true"
+            app:boxStrokeWidth="4dp"
+            app:boxStrokeWidthFocused="2dp"
+            app:boxStrokeColor="@color/purple_500"
+           >
+            <com.google.android.material.textfield.TextInputEditText
+                android:drawableLeft="@drawable/ic_lightening"
+                android:id="@+id/edtElectricity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/purple_700"
+                android:textSize="19sp"
+                android:drawablePadding="15dp"
+                android:paddingLeft="3dp"
+                android:inputType="number|numberDecimal"
+                android:hint="Electricity (Kwh)"
+                android:backgroundTint="#fff"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:theme="@style/MyTextInputLayout_overlay"
+            android:id="@+id/registerName2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/registerName"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:hintTextColor="@color/purple_700"
+            app:hintAnimationEnabled="true"
+            app:hintEnabled="true"
+            app:expandedHintEnabled="true"
+            app:boxStrokeWidth="4dp"
+            app:boxStrokeWidthFocused="2dp"
+            app:boxStrokeColor="@color/purple_500"
+
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:drawableLeft="@drawable/ic_gas"
+                android:id="@+id/edtGas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/purple_700"
+                android:inputType="number|numberDecimal"
+                android:textSize="19sp"
+                android:hint="Gas (Kwh)"
+                android:paddingLeft="3dp"
+                android:drawablePadding="15dp"
+                android:backgroundTint="#fff" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:theme="@style/MyTextInputLayout_overlay"
+            android:id="@+id/registerEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/registerName2"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:hintTextColor="@color/purple_700"
+            app:hintAnimationEnabled="true"
+            app:hintEnabled="true"
+            app:expandedHintEnabled="true"
+            app:boxStrokeWidth="4dp"
+            app:boxStrokeWidthFocused="2dp"
+            app:boxStrokeColor="@color/purple_500">
+            <com.google.android.material.textfield.TextInputEditText
+                android:drawableLeft="@drawable/ic_oil"
+                android:drawablePadding="15dp"
+                android:id="@+id/edtOil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/purple_700"
+                android:textSize="19sp"
+                android:hint="Oil (Litres)"
+                android:paddingLeft="3dp"
+                android:backgroundTint="#fff"
+                android:inputType="number|numberDecimal"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:theme="@style/MyTextInputLayout_overlay"
+            android:id="@+id/registerPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/registerEmail"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:hintTextColor="@color/purple_700"
+            app:hintAnimationEnabled="true"
+            app:hintEnabled="true"
+            app:expandedHintEnabled="true"
+            app:boxStrokeWidth="4dp"
+            app:boxStrokeWidthFocused="2dp"
+            app:boxStrokeColor="@color/purple_500">
+            <com.google.android.material.textfield.TextInputEditText
+                android:drawableLeft="@drawable/ic_waste"
+                android:id="@+id/edtWaste"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/purple_700"
+                android:textSize="19sp"
+                android:backgroundTint="#fff"
+                android:hint="Waste (Kg)"
+                android:paddingLeft="3dp"
+                android:drawablePadding="15dp"
+                android:inputType="number|numberDecimal"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:theme="@style/MyTextInputLayout_overlay"
+            android:id="@+id/register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/registerPassword"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:hintTextColor="@color/purple_700"
+            app:hintAnimationEnabled="true"
+            app:hintEnabled="true"
+            app:expandedHintEnabled="true"
+            app:boxStrokeWidth="4dp"
+            app:boxStrokeWidthFocused="2dp"
+            app:boxStrokeColor="@color/purple_500">
+            <com.google.android.material.textfield.TextInputEditText
+                android:drawableLeft="@drawable/ic_water"
+                android:id="@+id/edtWater"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/purple_700"
+                android:textSize="19sp"
+                android:backgroundTint="#fff"
+                android:hint="Water (Litres)"
+                android:textColorHint="@color/purple_200"
+                android:paddingLeft="3dp"
+                android:drawablePadding="15dp"
+                android:inputType="number|numberDecimal"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <android.widget.Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/register"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:layout_centerHorizontal="true"
+            android:text="Calculate Footprint"
+            android:textColor="#fff"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/btnCalculate"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:background="@drawable/background_design"
+            android:fontFamily="@font/abeezee"/>
+
+
+    </RelativeLayout>
+
+</ScrollView>

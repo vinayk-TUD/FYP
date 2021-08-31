@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="12dp"
+   >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/evening_night_bg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv"
+            android:layout_marginLeft="5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:textSize="20sp"
+            android:textColor="@color/charcoal"
+            android:text="Name your print"
+            android:fontFamily="@font/abeezee"
+            android:textStyle="bold|italic"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/tv"
+            android:id="@+id/name"
+            android:textColorHint="#000"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            app:boxStrokeWidth="4dp"
+            app:boxStrokeColor="#ff0d94"
+            app:hintTextColor="#ff0d94"
+            android:paddingStart="1dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/id_card"
+                android:drawablePadding="3dp"
+                android:id="@+id/edtName"
+                android:hint="Name your footprint"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <android.widget.Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:id="@+id/btnSub"
+            android:layout_below="@+id/name"
+            android:layout_marginTop="15sp"
+            android:background="@drawable/background_design"
+            android:text="Enter"
+            android:textColor="#fff"
+            android:layout_centerHorizontal="true"
+            android:ems="8"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="10sp"
+            android:layout_below="@+id/btnSub" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

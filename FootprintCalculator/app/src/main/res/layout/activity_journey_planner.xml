@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_cool_asteroid">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:text="Journey Calculator"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ff0d94"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/location1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_below="@+id/textView2"
+            android:textColorHint="@color/white"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:boxStrokeWidth="4dp"
+            app:boxStrokeColor="#ff0d94"
+            app:hintTextColor="#ff0d94">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:paddingLeft="3dp"
+                android:inputType="textEmailAddress"
+                android:hint="Enter Location 1"
+                android:drawableRight="@drawable/ic_search"
+                android:drawablePadding="5dp">
+
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <android.widget.Button
+            android:id="@+id/btnSearch1"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_below="@id/textView2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="289dp"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@color/transparent"
+            android:text="" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/location2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_below="@+id/location1"
+            android:textColorHint="@color/white"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:boxStrokeWidth="4dp"
+            app:boxStrokeColor="#ff0d94"
+            app:hintTextColor="#ff0d94">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtLocation2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:paddingLeft="3dp"
+                android:inputType="textEmailAddress"
+                android:hint="Enter Location 2"
+                android:drawableRight="@drawable/ic_search"
+                android:drawablePadding="5dp">
+
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <android.widget.Button
+            android:background="@color/transparent"
+            android:id="@+id/btnSearch2"
+            android:layout_width="wrap_content"
+            android:layout_height="69dp"
+            android:layout_alignEnd="@+id/location2"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="291dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginRight="45dp"
+            android:text="" />
+
+        <com.google.android.gms.maps.MapView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_below="@+id/location2"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:visibility="gone"
+            android:layout_marginRight="10dp"
+            android:id="@+id/mapView"/>
+
+        <android.widget.Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mapView"
+            android:text="Get Distance"
+            android:id="@+id/btnGetDistance"
+            android:background="@drawable/background_design"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <android.widget.Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnGetDistance"
+            android:text="Calculate Footprint"
+            android:id="@+id/btnCalculateFootprint"
+            android:background="@drawable/background_design"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/listView"
+            android:visibility="gone"
+            android:layout_below="@+id/location2"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

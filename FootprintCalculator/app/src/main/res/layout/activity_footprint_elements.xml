@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="activities.FootprintElementsActivity"
+    android:background="@drawable/bg_green">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scroll">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="25dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="12dp"
+                android:elevation="5dp"
+                app:cardElevation="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/cardHome"
+                app:cardBackgroundColor="#2c3e50"
+                app:strokeWidth="4dp"
+                app:strokeColor="@color/colorPrimary">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:id="@+id/animateHome"
+                        app:lottie_rawRes="@raw/home"
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true"
+                        android:layout_marginTop="15dp"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:src="@drawable/home_energy"
+                        android:scaleType="fitCenter"
+                        android:id="@+id/imghome"
+                        android:layout_marginTop="15dp"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/tv1"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/animateHome"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="18dp"
+                        android:layout_marginBottom="2dp"
+                        android:fontFamily="@font/abeezee"
+                        android:text="Home"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:text="Score : 0"
+                        android:layout_below="@+id/animateHome"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="18dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="5dp"
+                        android:id="@+id/tvHomeScore"
+                        android:layout_marginBottom="2dp"
+                        android:fontFamily="@font/abeezee"/>
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="12dp"
+                android:elevation="5dp"
+                app:cardElevation="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="50dp"
+                android:id="@+id/cardTransport"
+                android:layout_below="@id/cardHome"
+                app:cardBackgroundColor="#2c3e50"
+                app:strokeWidth="4dp"
+                app:strokeColor="@color/colorPrimary">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:id="@+id/animateTransport"
+                        app:lottie_rawRes="@raw/transport_trans"
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true"
+                        android:layout_marginTop="15dp"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:src="@drawable/ic_transport"
+                        android:scaleType="fitCenter"
+                        android:id="@+id/imgtrans"
+                        android:paddingTop="15dp"
+                        android:layout_marginTop="10dp"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/tv2"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/animateTransport"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/abeezee"
+                        android:text="Transport"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="italic"
+                        android:layout_marginBottom="2dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:text="Score : 0"
+                        android:layout_below="@+id/animateTransport"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="19dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="5dp"
+                        android:id="@+id/tvTransportScore"
+                        android:fontFamily="@font/abeezee"
+                        android:layout_marginBottom="2dp"/>
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="12dp"
+                android:elevation="5dp"
+                app:cardElevation="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="50dp"
+                android:id="@+id/cardFood"
+                android:layout_below="@id/cardTransport"
+                app:cardBackgroundColor="#2c3e50"
+                app:strokeColor="@color/colorPrimary"
+                app:strokeWidth="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:id="@+id/animateFood"
+                        app:lottie_rawRes="@raw/food_loading"
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true"
+                        android:layout_marginTop="25dp"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:src="@drawable/ic_food_and_drink"
+                        android:scaleType="fitCenter"
+                        android:id="@+id/imgfood"
+                        android:paddingTop="15dp"
+                        android:layout_marginTop="10dp"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/tv3"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/animateFood"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/abeezee"
+                        android:text="Food"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="italic"
+                        android:layout_marginBottom="2dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:text="Score : 0"
+                        android:layout_below="@+id/animateFood"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="19dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="5dp"
+                        android:id="@+id/tvFoodScore"
+                        android:fontFamily="@font/abeezee"
+                        android:layout_marginBottom="2dp"/>
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_home"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@id/txtInfo"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="36dp"
+                android:scaleType="center"
+                android:src="@drawable/ic_nav_home"
+                app:backgroundTintMode="src_in"
+                app:backgroundTint="@color/pink"
+                app:borderWidth="4dp"
+                app:fabCustomSize="100dp"
+                app:maxImageSize="80dp"
+                app:rippleColor="@color/teal_200" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtInfo"
+                android:layout_below="@id/cardFood"
+                android:layout_marginTop="19dp"
+                android:background="@drawable/border_compare"
+                android:textAlignment="center"
+                android:text=""
+                android:textColor="@color/pink"
+                android:textSize="20sp"
+                android:textStyle="italic"
+                android:scrollHorizontally="true"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"/>
+
+            <android.widget.Button
+                android:id="@+id/btnCalculateTotal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_design"
+                android:text="Calculate Total Footprint"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_below="@+id/cardFood"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="8sp"
+                android:layout_below="@+id/btnCalculateTotal"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

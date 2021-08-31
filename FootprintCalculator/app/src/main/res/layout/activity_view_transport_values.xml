@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relative2"
+        android:background="@drawable/bg_home">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Transport Emission Values"
+            android:id="@+id/tv1"
+            android:layout_centerHorizontal="true"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/charcoal"
+            android:fontFamily="@font/abeezee"
+            android:layout_marginTop="80dp"
+            />
+
+        <TextView
+            android:id="@+id/txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv1"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="15dp"
+            android:text="Emission values for each mode of transport can be seen below"
+            android:textSize="16sp">
+
+        </TextView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv1"
+            android:layout_marginLeft="20dp"
+            android:text="Bus Emission Value"
+            android:textSize="20sp"
+            android:layout_marginTop="40dp"
+            android:textStyle="bold"
+            android:textColor="@color/charcoal"
+            android:id="@+id/tvBus"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv1"
+            android:layout_marginTop="43dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:text="0.0"
+            android:textSize="18sp"
+            android:id="@+id/tvBusVal"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ff0d94"
+            android:id="@+id/view1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/tvBus"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view1"
+            android:layout_marginLeft="20dp"
+            android:text="Train Emission Value"
+            android:textSize="20sp"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/charcoal"
+            android:id="@+id/tvTrainn"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view1"
+            android:layout_marginTop="18dp"
+            android:layout_alignParentRight="true"
+            android:text="0.0"
+            android:textSize="18sp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/tvTrainVal"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ff0d94"
+            android:id="@+id/view2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/tvTrainn"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view2"
+            android:layout_marginLeft="20dp"
+            android:text="Plane Emission Value"
+            android:textSize="20sp"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/charcoal"
+            android:id="@+id/tvPlane"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view2"
+            android:layout_marginTop="18dp"
+            android:layout_alignParentRight="true"
+            android:text="0.0"
+            android:textSize="18sp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/tvPlantVal"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ff0d94"
+            android:id="@+id/view3"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/tvPlane"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view3"
+            android:layout_marginLeft="20dp"
+            android:text="Metro Emission Value"
+            android:textSize="20sp"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/charcoal"
+            android:id="@+id/tvMetro"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view3"
+            android:layout_marginTop="18dp"
+            android:layout_alignParentRight="true"
+            android:text="0.0"
+            android:textSize="18sp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/tvMetroVal"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ff0d94"
+            android:id="@+id/view4"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/tvMetro"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view4"
+            android:layout_marginLeft="20dp"
+            android:text="Taxi Emission Value"
+            android:textSize="20sp"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/charcoal"
+            android:id="@+id/tvTaxi"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view4"
+            android:layout_marginTop="18dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:text="0.0"
+            android:textSize="18sp"
+            android:id="@+id/tvTaxiVal"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ff0d94"
+            android:id="@+id/view5"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/tvTaxi"
+            android:layout_marginTop="15dp"/>
+
+        <android.widget.Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/view5"
+            android:layout_marginTop="25dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bg_cool_asteroid"
+            android:text="Done"
+            android:textColor="#fff"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/btnDone"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
