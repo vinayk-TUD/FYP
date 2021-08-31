@@ -247,7 +247,7 @@ public class FootprintElementsActivity extends AppCompatActivity {
            tv.setVisibility(View.VISIBLE);
            YoYo.with(Techniques.FlipInX).duration(2000).repeat(1).playOn(tv);
            totalscore = totalEmission+totalFoodEmission+totalTransEmission;
-           tv.setText("Total Footrpint Score : " + String.format("%.2f",totalscore) + " Head over to MyFootrpints to see a breakdown of your figures");
+           tv.setText("To see your total footprint head over to MyFootrpints on your dash to see a breakdown of your figures");
 
 
        }//End if

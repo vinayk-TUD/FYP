@@ -106,7 +106,7 @@ public class CovidPointsActivity extends BaseActivity {
                     adapter = new FootprintListAdapter(CovidPointsActivity.this, list);
                     listView.setAdapter(adapter);
                 }else {
-                    textView.setText("No footprints calculated yet.");
+                    textView.setText("You have not created any footrpints.");
                 }
                 hideProgressDialog();
             }

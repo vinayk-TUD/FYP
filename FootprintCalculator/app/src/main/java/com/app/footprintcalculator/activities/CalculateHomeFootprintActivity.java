@@ -51,6 +51,10 @@ public class CalculateHomeFootprintActivity extends AppCompatActivity {
 //        edtWater.setText(String.format("%.1f",FootprintElementsActivity.waterEmission));
 
         fabHome = findViewById(R.id.fab_home);
+
+        TextView txtHomeDesc = findViewById(R.id.txtHomeDesc);
+
+        YoYo.with(Techniques.RubberBand).duration(1500).repeat(1).playOn(txtHomeDesc);
 //
 //        //fabHome.setVisibility(View.GONE);
 //        fabHome.setOnClickListener(new View.OnClickListener() {

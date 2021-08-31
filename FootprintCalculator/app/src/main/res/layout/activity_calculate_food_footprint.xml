@@ -16,6 +16,7 @@
 
 
             <TextView
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Enter Food Consumptions"
@@ -30,14 +31,25 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="All values(Calories) for 1 day"
+                android:textAlignment="center"
+                android:text="All values(Calories kcal) are for 1 day\nResults generated according to use per 2 months"
                 android:id="@+id/tv2"
                 android:layout_centerHorizontal="true"
                 android:textSize="15sp"
                 android:layout_below="@+id/tv1"
                 android:textColor="#696767"
-                android:layout_marginTop="3dp"
+                android:layout_marginTop="6dp"
                 />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/charcoal"
+                android:id="@+id/txtFoodDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv2"
+                android:text="Average daily calorie intake varies\n Usually 2000-2500 calories"/>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/registerName"
@@ -47,8 +59,8 @@
                 android:focusableInTouchMode="true"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
-                android:layout_marginTop="50dp"
-                android:layout_below="@id/tv1"
+                android:layout_marginTop="30dp"
+                android:layout_below="@id/txtFoodDesc"
                 android:textColorHint="#000"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 app:boxStrokeWidth="4dp"

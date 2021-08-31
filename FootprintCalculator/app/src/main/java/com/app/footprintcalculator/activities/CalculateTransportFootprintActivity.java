@@ -59,14 +59,15 @@ public class CalculateTransportFootprintActivity extends AppCompatActivity {
         tvPlane = findViewById(R.id.tvPlane);
 
         //edtVehicleValue.setText(String.format("%.1f",FootprintElementsActivity.vehicleEmission));
-
+        TextView textView = findViewById(R.id.txtDescription);
+        YoYo.with(Techniques.RotateIn).repeat(1).duration(1500).playOn(textView);
         fabHome = findViewById(R.id.fab_home);
-        fabHome.setVisibility(View.GONE);
-
+        //fabHome.setVisibility(View.GONE);
+        fabHome.setVisibility(View.VISIBLE);
         fabHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), UserActivity.class);
+                Intent i = new Intent(getApplicationContext(), FootprintElementsActivity.class);
                 startActivity(i);
             }
         });

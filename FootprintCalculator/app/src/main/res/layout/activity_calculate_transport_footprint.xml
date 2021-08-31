@@ -24,6 +24,22 @@
             android:layout_marginTop="30dp"
             />
 
+        <TextView
+            android:textAlignment="textStart"
+            android:textStyle="italic"
+            android:textColor="@color/charcoal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtDescription"
+            android:layout_below="@id/tv1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:textSize="14sp"
+            android:text="1) Vehicle is the distance you travel in your own vehicle\n 2) To enter values for different modes click the icons for each type \t\t\tof transport\n3) Then follow the instructions\n4) When entered all your desired values click calculate\n5) Make sure to enter vehicle value last!"/>
+
+
+
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/registerName"
@@ -34,7 +50,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:layout_marginTop="20dp"
-            android:layout_below="@id/tv1"
+            android:layout_below="@id/txtDescription"
             android:textColorHint="@color/purple_200"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             app:boxStrokeColor="@color/purple_200"
@@ -289,6 +305,7 @@
             android:layout_marginBottom="36dp"
             android:scaleType="center"
             android:background="@drawable/login_butn_green"
+            android:backgroundTint="@color/purple_200"
             app:borderWidth="4dp"
             app:fabCustomSize="100dp"
             app:maxImageSize="80dp"

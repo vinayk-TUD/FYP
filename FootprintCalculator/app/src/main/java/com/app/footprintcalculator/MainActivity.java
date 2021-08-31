@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import com.airbnb.lottie.LottieAnimationView;
 import com.app.footprintcalculator.activities.UserActivity;
 
 import org.json.JSONException;
@@ -22,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
     TextView addressTxt, updated_atTxt, statusTxt, tempTxt, temp_minTxt, temp_maxTxt, sunriseTxt,
             sunsetTxt, windTxt, pressureTxt, humidityTxt;
     double latitude, longitude;
+    LottieAnimationView weatherAnimation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
         windTxt = findViewById(R.id.wind);
         pressureTxt = findViewById(R.id.pressure);
         humidityTxt = findViewById(R.id.humidity);
+        weatherAnimation = findViewById(R.id.animLottie);
 
         new weatherTask().execute();
 
@@ -112,6 +115,17 @@ public class MainActivity extends AppCompatActivity {
                 /* Views populated, Hiding the loader, Showing the main design */
                 findViewById(R.id.loader).setVisibility(View.GONE);
                 findViewById(R.id.mainContainer).setVisibility(View.VISIBLE);
+
+                if(weatherDescription.toLowerCase().contains("clear sky") || weatherDescription.toLowerCase().contains("few clouds")){
+                    weatherAnimation.setAnimation(R.raw.clear_sky);
+                }
+                if(weatherDescription.toLowerCase().contains("broken clouds") || weatherDescription.toLowerCase().contains("overcast clouds")){
+                    weatherAnimation.setAnimation(R.raw.dark_cloud);
+                }
+                if(weatherDescription.toLowerCase().contains("drizzle rain") || weatherDescription.toLowerCase().contains("shower rain") ||
+                        weatherDescription.toLowerCase().contains("light rain") || weatherDescription.toLowerCase().contains("light intensity shower rain")){
+                    weatherAnimation.setAnimation(R.raw.light_shower);
+                }
 
 
             } catch (JSONException e) {

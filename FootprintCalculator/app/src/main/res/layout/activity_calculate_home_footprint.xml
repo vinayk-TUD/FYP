@@ -37,6 +37,18 @@
             android:layout_marginTop="3dp"
             />
 
+        <TextView
+            android:textColor="@color/charcoal"
+            android:layout_marginTop="15dp"
+            android:id="@+id/txtHomeDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv2"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:textAlignment="center"
+            android:text="avg electric use : 700 kwh\n avg gas use : 1833.33kwh\n avg oil use : 480Litres\navg waste : 25kg\navg water use : 20,500Litres\n All values based on Irish average useage statistics "/>
+
         <com.google.android.material.textfield.TextInputLayout
             android:theme="@style/MyTextInputLayout_overlay"
             android:id="@+id/registerName"
@@ -46,8 +58,8 @@
             android:focusableInTouchMode="true"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:layout_marginTop="50dp"
-            android:layout_below="@id/tv2"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/txtHomeDesc"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             app:hintTextColor="@color/purple_700"
             app:hintAnimationEnabled="true"

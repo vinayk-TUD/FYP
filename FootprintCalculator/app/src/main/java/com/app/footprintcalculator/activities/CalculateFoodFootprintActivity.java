@@ -16,6 +16,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.app.footprintcalculator.R;
 import com.app.footprintcalculator.models.FoodModel;
 import com.app.footprintcalculator.models.HomeModel;
+import com.daimajia.androidanimations.library.Techniques;
+import com.daimajia.androidanimations.library.YoYo;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 //Food Footprint
@@ -44,6 +46,9 @@ public class CalculateFoodFootprintActivity extends AppCompatActivity {
         edtSnacks = findViewById(R.id.edtSnacks);
         edtDrinks = findViewById(R.id.edtDrinks);
         btnCalculate = findViewById(R.id.btnCalculate);
+        TextView txtFoodDesc = findViewById(R.id.txtFoodDesc);
+
+        YoYo.with(Techniques.Wobble).repeat(1).duration(1500).playOn(txtFoodDesc);
 
 //        edtRedMeat.setText(String.format("%.1f",FootprintElementsActivity.redMeatEmission));
 //        edtWhiteMeat.setText(String.format("%.1f",FootprintElementsActivity.whiteMeatEmission));
